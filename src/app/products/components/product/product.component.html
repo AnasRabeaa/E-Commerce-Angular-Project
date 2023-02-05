@@ -1,0 +1,18 @@
+<div class="item" >
+    <div>
+        <img src="{{data.image}}" alt="img">
+        <div class="body">
+            <h4>{{data.title}}</h4>
+            <p>{{data.description}}</p>
+        </div>
+    </div>
+
+    <div class="px-3 mb-2 d-flex justify-content-between align-datas-center ">
+        <button class="btn btn-success" >Add To Cart</button>
+        <div class="d-flex w-25" >
+            <input type="number" class="form-control">
+            <button class="btn btn-danger">+</button>
+        </div>
+        <span>{{data.price | currency}}</span>
+    </div>
+</div>
